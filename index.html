@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Mi Teléfono</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Vinculamos el manifiesto para que sea PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e88e5">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>📱 Busca Mi Teléfono</h1>
+        
+        <!-- Botón obligatorio para activar el micrófono -->
+        <button id="btnIniciar">🎤 Activar Escucha</button>
+        <button id="btnParar" class="oculto">🛑 Detener</button>
+        
+        <p id="estado">Presiona el botón para empezar a buscar.</p>
+        
+        <!-- Audio de la alarma (oculto) -->
+        <audio id="audioAlarma" src="alarma.mp3" loop></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
